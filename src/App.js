@@ -3,6 +3,7 @@ import Toolbar from 'material-ui/Toolbar'
 import Typography from 'material-ui/Typography'
 import Button from 'material-ui/Button'
 import Slider from 'react-slick'
+import Particles from 'react-particles-js'
 import Menu, { MenuItem } from 'material-ui/Menu'
 import screenshot1 from './screenshot-1.png'
 import screenshot2 from './screenshot-2.png'
@@ -143,14 +144,15 @@ class App extends React.Component {
             FACEIT Enhancer is developed independently, and is not officially
             endorsed by or affiliated with FACEIT.
           </Typography>
-          <Button
-            variant="caption"
-            href="https://faceit.com/en/players/azn__"
-            target="_blank"
-          >
+          <Button href="https://faceit.com/en/players/azn__" target="_blank">
             Developed by azn
           </Button>
         </Toolbar>
+        <div
+          style={{ position: 'absolute', left: 0, top: 0, right: 0, bottom: 0 }}
+        >
+          <Particles />
+        </div>
       </div>
     )
   }
