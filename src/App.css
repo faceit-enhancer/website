@@ -1,0 +1,24 @@
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide > div {
+  width: auto;
+  height: 100%;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+.image-wrapper {
+  height: 100%;
+}
+
+.image-wrapper > img {
+  height: 100%;
+  margin: 0 auto;
+}
