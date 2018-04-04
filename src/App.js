@@ -30,6 +30,11 @@ class App extends React.Component {
     const { anchorEl } = this.state
     return (
       <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+        <div
+          style={{ position: 'absolute', left: 0, top: 0, right: 0, bottom: 0 }}
+        >
+          <Particles />
+        </div>
         <Toolbar style={{ justifyContent: 'flex-end' }}>
           <Button color="primary" onClick={this.handleClick}>
             Donate
@@ -148,11 +153,6 @@ class App extends React.Component {
             Developed by azn
           </Button>
         </Toolbar>
-        <div
-          style={{ position: 'absolute', left: 0, top: 0, right: 0, bottom: 0 }}
-        >
-          <Particles />
-        </div>
       </div>
     )
   }
