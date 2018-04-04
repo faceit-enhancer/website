@@ -128,17 +128,13 @@ class App extends React.Component {
           </div>
           <div style={{ flex: 1 }}>
             <Slider autoplaySpeed={5000} autoplay infinite fade adaptiveHeight>
-              {[
-                screenshot1,
-                screenshot2,
-                screenshot3,
-                screenshot3,
-                screenshot4
-              ].map((screenshot, i) => (
-                <div className="image-wrapper" key={i}>
-                  <img src={screenshot} />
-                </div>
-              ))}
+              {[screenshot1, screenshot2, screenshot3, screenshot4].map(
+                (screenshot, i) => (
+                  <div className="image-wrapper" key={i}>
+                    <img src={screenshot} />
+                  </div>
+                )
+              )}
             </Slider>
           </div>
         </div>
