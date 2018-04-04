@@ -31,7 +31,14 @@ class App extends React.Component {
     return (
       <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <div
-          style={{ position: 'absolute', left: 0, top: 0, right: 0, bottom: 0 }}
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            right: 0,
+            bottom: 0,
+            overflow: 'hidden'
+          }}
         >
           <Particles />
         </div>
