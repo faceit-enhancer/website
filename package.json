@@ -25,7 +25,7 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.{js,json}": [
+    "*.{js,json,css}": [
       "prettier --write",
       "git add"
     ]

@@ -6,6 +6,10 @@
   height: 100%;
 }
 
+.slick-arrow {
+  z-index: 100;
+}
+
 .slick-prev {
   left: 25px;
 }
