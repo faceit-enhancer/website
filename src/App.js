@@ -83,7 +83,7 @@ class App extends React.Component {
           </Button>
           <Button
             color="primary"
-            href="https://github.com/timche/faceit-enhancer"
+            href="https://github.com/faceit-enhancer/faceit-enhancer"
             target="_blank"
           >
             GitHub
