@@ -4,7 +4,6 @@ import Typography from 'material-ui/Typography'
 import Button from 'material-ui/Button'
 import Slider from 'react-slick'
 import Particles from 'react-particles-js'
-import Menu, { MenuItem } from 'material-ui/Menu'
 import screenshot1 from './images/screenshot-1.png'
 import screenshot2 from './images/screenshot-2.png'
 import screenshot3 from './images/screenshot-3.png'
@@ -14,20 +13,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import './App.css'
 
 class App extends React.Component {
-  state = {
-    anchorEl: null
-  }
-
-  handleClick = event => {
-    this.setState({ anchorEl: event.currentTarget })
-  }
-
-  handleClose = () => {
-    this.setState({ anchorEl: null })
-  }
-
   render() {
-    const { anchorEl } = this.state
     return (
       <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <div
@@ -43,30 +29,6 @@ class App extends React.Component {
           <Particles />
         </div>
         <Toolbar style={{ justifyContent: 'flex-end' }}>
-          <Button color="primary" onClick={this.handleClick}>
-            Donate
-          </Button>
-          <Menu
-            id="donate-menu"
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={this.handleClose}
-          >
-            <MenuItem
-              component="a"
-              href="https://paypal.me/timcheung"
-              target="_blank"
-            >
-              PayPal
-            </MenuItem>
-            <MenuItem
-              component="a"
-              href="http://steamcommunity.com/tradeoffer/new/?partner=238736&token=IGhRvdeN"
-              target="_blank"
-            >
-              Steam Trade Offer
-            </MenuItem>
-          </Menu>
           <Button
             color="primary"
             href="https://www.reddit.com/r/faceitenhancer"
@@ -157,7 +119,7 @@ class App extends React.Component {
             endorsed by or affiliated with FACEIT.
           </Typography>
           <Button href="https://faceit.com/en/players/azn__" target="_blank">
-            Developed by azn
+            Created by azn
           </Button>
         </Toolbar>
       </div>
