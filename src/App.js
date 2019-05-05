@@ -50,6 +50,13 @@ class App extends React.Component {
           >
             GitHub
           </Button>
+          <Button
+            color="primary"
+            href="https://twitter.com/timche_"
+            target="_blank"
+          >
+            Twitter
+          </Button>
         </Toolbar>
         <div
           style={{
