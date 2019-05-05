@@ -118,7 +118,7 @@ class App extends React.Component {
             FACEIT Enhancer is developed independently, and is not officially
             endorsed by or affiliated with FACEIT.
           </Typography>
-          <Button href="https://faceit.com/en/players/azn__" target="_blank">
+          <Button href="https://faceit.com/en/players/azn" target="_blank">
             Created by azn
           </Button>
         </Toolbar>
